@@ -1,0 +1,630 @@
+#include "widget.h"
+
+Widget::Widget(QWidget *parent) :
+    QWidget(parent),
+    ui(new Ui::Widget)
+{
+    ui->setupUi(this);
+
+    QTimer *timer = new QTimer(this);
+    /*Connect to update()*/
+    connect(timer, SIGNAL(timeout()), this, SLOT(update()));
+    timer->start(500);
+    egoTable = ui->Ego_Apt_Table;
+    indexStatBox = 0;
+    morphIndex = 0;
+    selTable = ui->tableCombat;
+}
+
+Widget::~Widget()
+{
+    delete ui;
+}
+
+void Widget::update()
+{
+    for(counter[0] = 0; counter[0] < 7; counter[0]++)
+    {
+        values[0] = egoTable->item(counter[0],0)->text().toDouble();
+        values[1] = egoTable->item(counter[0],1)->text().toDouble();
+        values[2] = egoTable->item(counter[0],2)->text().toDouble();
+        values[3] = egoTable->item(counter[0],3)->text().toDouble();
+        values[4] = egoTable->item(counter[0],4)->text().toDouble();
+        values[0] = values[0] + values[1] + values[2] + values[3];
+        if((values[4] <= values[0]))
+        {
+            values[0] = values[4];
+        }
+        str[0] = toString(values[0]);
+        egoTable->item(counter[0],5)->setText(str[0]);
+    }
+
+    ui->morphSelect->setCurrentIndex(storage.stats[4]);
+
+    skillsUpdate();
+    stats();
+}
+
+void Widget::on_EA_Add_clicked()
+{
+    qreal input = ui->valueSelect->text().toDouble();
+    switch(indexStatBox)
+    {
+    case 0 :
+        storage.stats[0] = storage.stats[0] + input;
+    case 1 :
+        storage.stats[1] = storage.stats[1] + input;
+        break;
+    case 2 :
+        storage.stats[2] = storage.stats[2] + input;
+        break;
+    case 3 :
+        storage.stats[3] = storage.stats[3] + input;
+        break;
+    }
+
+}
+
+void Widget::on_EA_Sub_clicked()
+{
+    qreal input = ui->valueSelect->text().toDouble();
+    switch(indexStatBox)
+    {
+    case 0 :
+        storage.stats[0] = storage.stats[0] - input;
+    case 1 :
+        storage.stats[1] = storage.stats[1] - input;
+        break;
+    case 2 :
+        storage.stats[2] = storage.stats[2] - input;
+        break;
+    case 3 :
+        storage.stats[3] = storage.stats[3] - input;
+        break;
+    }
+}
+
+QString Widget::toString(qint32 temp)
+{
+    return QString::number(temp);
+}
+
+void Widget::on_save_clicked()
+{
+    out();
+}
+
+void Widget::on_load_clicked()
+{
+    in();
+}
+
+void Widget::on_addRow_clicked()
+{
+    rowName = ui->addText->text();
+    addRow();
+}
+
+void Widget::on_delRow_clicked()
+{
+    rowName = ui->addText->text();
+    delRow();
+}
+
+void Widget::push_epc()
+{
+    storage.strRows.resize(0);
+    storage.strV.resize(0);
+    for(counter[0] = 1; counter[0] < 11; counter[0]++)
+    {
+        setTable(counter[0]);
+        rowCount[0] = tempTable->rowCount();
+        for(counter[1] = 0; counter[1] < rowCount[0]; counter[1]++)
+        {
+            storage.strRows.push_back(tempTable->verticalHeaderItem(counter[1])->text());
+        }
+        storage.data[counter[0]] = rowCount[0];
+        //qDebug() << storage.data[counter[0]];
+    }
+
+    for(counter[0] = 0; counter[0] < 11; counter[0]++)
+    {
+        setTable(counter[0]);
+        counter[4] = tempTable->rowCount();
+        counter[5] = tempTable->columnCount();
+        for(counter[1] = 0; counter[1] < counter[4]; counter[1]++)
+        {
+            for(counter[2] = 0; counter[2] < counter[5]; counter[2]++)
+            {
+                storage.strV.push_back(tempTable->item(counter[1],counter[2])->text());
+            }
+        }
+    }
+    storage.character = ui->charName->text();
+}
+
+void Widget::pull_epc()
+{    
+    for(counter[0] = 1; counter[0] < 11; counter[0]++)
+    {
+        QStringList list;
+        setTable(counter[0]);
+        removeAllRows();
+        rowCount[0] = storage.data[counter[0]];
+        for(counter[1] = 0; counter[1] <  rowCount[0]; counter[1]++)
+        {
+            list.append(storage.strRows.first());
+            storage.strRows.pop_front();
+        }
+        for(counter[1] = 0; counter[1] <  rowCount[0]; counter[1]++)
+        {
+            QTableWidgetItem *item;
+            tempTable->insertRow(counter[1]);
+            item = new QTableWidgetItem(QString("0"));
+            tempTable->setItem(counter[1], 0, item);
+            item = new QTableWidgetItem(QString("0"));
+            tempTable->setItem(counter[1], 1, item);
+            item = new QTableWidgetItem(QString("0"));
+            tempTable->setItem(counter[1], 2, item);
+            item = new QTableWidgetItem(QString("0"));
+            tempTable->setItem(counter[1], 3, item);
+            item = new QTableWidgetItem(QString("None"));
+            tempTable->setItem(counter[1], 4, item);
+            item = new QTableWidgetItem(QString(""));
+            tempTable->setItem(counter[1], 5, item);
+        }
+        tempTable->setVerticalHeaderLabels(list);
+    }
+
+    for(counter[0] = 0; counter[0] < 11; counter[0]++)
+    {
+        setTable(counter[0]);
+        counter[4] = tempTable->rowCount();
+        counter[5] = tempTable->columnCount();
+        for(counter[1] = 0; counter[1] < counter[4]; counter[1]++)
+        {
+            for(counter[2] = 0; counter[2] < counter[5]; counter[2]++)
+            {
+                tempTable->item(counter[1],counter[2])->setText(storage.strV.first());
+                storage.strV.pop_front();
+            }
+        }
+    }
+    ui->charName->setText(storage.character);
+    morphIndex = storage.stats[4];
+}
+
+
+void Widget::out()
+{
+    QString fileName = QFileDialog::getSaveFileName(this,
+                                                    tr("Save Character"), "",
+                                                    tr("Eclipse Phace Character (*.epc);;All Files (*)"));
+    if (!fileName.isEmpty())
+    {
+        QFile file(fileName);
+        if (!file.open(QIODevice::WriteOnly)) {
+            QMessageBox::information(this, tr("Unable to open file"),
+                                     file.errorString());
+            return;
+        }
+        QDataStream out(&file);
+        push_epc();
+        out << storage.strV;
+        out << storage.strRows;
+        for(int i = 0; i < 25; i++)
+        {
+            out << storage.data[i];
+        }
+        for(int i = 0; i < 25; i++)
+        {
+            out << storage.dataReal[i];
+        }
+        out << storage.character;
+        for(int i = 0; i < 5; i++)
+        {
+            out << storage.stats[i];
+        }
+    }
+}
+
+void Widget::in()
+{
+    QString fileName = QFileDialog::getOpenFileName(this,
+                                                    tr("Load Character"), "",
+                                                    tr("Eclipse Phace Character (*.epc);;All Files (*)"));
+    if (!fileName.isEmpty())
+    {
+        QFile file(fileName);
+
+        if (!file.open(QIODevice::ReadOnly)) {
+            QMessageBox::information(this, tr("Unable to open file"),
+                                     file.errorString());
+            return;
+        }
+
+        QDataStream in(&file);
+        in >> storage.strV;
+        in >> storage.strRows;
+        for(int i = 0; i < 25; i++)
+        {
+            in >> storage.data[i];
+        }
+        for(int i = 0; i < 25; i++)
+        {
+            in >> storage.dataReal[i];
+        }
+        in >> storage.character;
+        for(int i = 0; i < 5; i++)
+        {
+            in >> storage.stats[i];
+        }
+        pull_epc();
+    }
+}
+
+void Widget::addRow()
+{
+    if(selTable != 0)
+    {
+        QTableWidgetItem *item;
+        QStringList list;
+        rowCount[0] = (selTable->rowCount());
+        for(counter[0] = 0; counter[0] < rowCount[0]; counter[0]++)
+        {
+            list.append(selTable->verticalHeaderItem(counter[0])->text());
+        }
+        list.append(rowName);
+        selTable->insertRow(rowCount[0]);
+        item = new QTableWidgetItem(QString("0"));
+        selTable->setItem(rowCount[0], 0, item);
+        item = new QTableWidgetItem(QString("0"));
+        selTable->setItem(rowCount[0], 1, item);
+        item = new QTableWidgetItem(QString("0"));
+        selTable->setItem(rowCount[0], 2, item);
+        item = new QTableWidgetItem(QString("0"));
+        selTable->setItem(rowCount[0], 3, item);
+        item = new QTableWidgetItem(QString("None"));
+        selTable->setItem(rowCount[0], 4, item);
+        item = new QTableWidgetItem(QString(""));
+        selTable->setItem(rowCount[0], 5, item);
+
+        selTable->setVerticalHeaderLabels(list);
+    }
+}
+
+void Widget::delRow()
+{
+    if(selTable != 0)
+    {
+        for(counter[0] = 0; counter[0] < selTable->rowCount(); counter[0]++)
+        {
+            if(selTable->verticalHeaderItem(counter[0])->text() == rowName)
+            {
+                selTable->removeRow(counter[0]);
+            }
+        }
+    }
+}
+
+void Widget::skillsUpdate()
+{
+    for(counter[0] = 1; counter[0] < 11; counter[0]++)
+    {
+        setTable(counter[0]);
+        counter[2] = tempTable->rowCount();
+
+        for(counter[1] = 0; counter[1] < counter[2]; counter[1]++)
+        {
+            QString tempApt = tempTable->item(counter[1],5)->text();
+            values[3] = getLinkedApt(tempApt);
+            if(values[3] == 7)
+            {
+                tempTable->item(counter[1],1)->setText("0");
+            }
+            else
+            {
+                tempTable->item(counter[1],1)->setText(egoTable->item(values[3],5)->text());
+            }
+
+            values[0] = tempTable->item(counter[1],0)->text().toDouble();
+            if(values[0] > 99)
+            {
+                values[0] = 99;
+                tempTable->item(counter[1],0)->setText("99");
+            }
+            if(values[0] < 0 || tempTable->item(counter[1],0)->text().isEmpty())
+            {
+                values[0] = 0;
+                tempTable->item(counter[1],0)->setText("0");
+            }
+            values[5] = egoTable->item(getLinkedApt(tempTable->item(counter[1],5)->text()),0)->text().toInt();
+            values[6] = values[0] + values[5];
+            values[7] = 0;
+            if(values[6] > 60)
+            {
+                values[0] = values[0] - 60;
+                values[0] = values[0] / 2;
+                qDebug() << values[0];
+            }
+
+            values[1] = tempTable->item(counter[1],1)->text().toDouble();
+            values[2] = tempTable->item(counter[1],2)->text().toDouble();
+            values[0] = values[0] + values[1] + values[2];
+
+
+
+
+
+
+            str[0] = toString(values[0]);
+            tempTable->item(counter[1],3)->setText(str[0]);
+
+        }
+    }
+}
+
+void Widget::on_tabWidget_tabBarClicked(qint32 index)
+{
+    switch(index)
+    {
+    case 0 :
+        selTable = ui->tableCombat;
+        break;
+    case 1 :
+        selTable = ui->tableExWp;
+        break;
+    case 2 :
+        selTable = ui->tableHardware;
+        break;
+    case 3 :
+        selTable = ui->tableKnow;
+        break;
+    case 4 :
+        selTable = ui->tableMental;
+        break;
+    case 5 :
+        selTable = ui->tablePhysical;
+        break;
+    case 6 :
+        selTable = ui->tablePsi;
+        break;
+    case 7 :
+        selTable = ui->tableSocial;
+        break;
+    case 8 :
+        selTable = ui->tableTechnical;
+        break;
+    case 9 :
+        selTable = ui->tableVehicle;
+        break;
+    }
+}
+
+void Widget::setTable(qint32 index)
+{
+    switch(index)
+    {
+    case 0 :
+        tempTable = egoTable;
+        break;
+    case 1 :
+        tempTable = ui->tableCombat;
+        break;
+    case 2 :
+        tempTable = ui->tableExWp;
+        break;
+    case 3 :
+        tempTable = ui->tableHardware;
+        break;
+    case 4 :
+        tempTable = ui->tableKnow;
+        break;
+    case 5 :
+        tempTable = ui->tableMental;
+        break;
+    case 6 :
+        tempTable = ui->tablePhysical;
+        break;
+    case 7 :
+        tempTable = ui->tablePsi;
+        break;
+    case 8 :
+        tempTable = ui->tableSocial;
+        break;
+    case 9 :
+        tempTable = ui->tableTechnical;
+        break;
+    case 10 :
+        tempTable = ui->tableVehicle;
+        break;
+    }
+}
+
+qint32 Widget::getLinkedApt(QString apt)
+{
+    if(apt == "COG")
+    {
+        return 0;
+    }
+    else if(apt == "COO")
+    {
+        return 1;
+    }
+    else if(apt == "INT")
+    {
+        return 2;
+    }
+    else if(apt == "REF")
+    {
+        return 3;
+    }
+    else if(apt == "SAV")
+    {
+        return 4;
+    }
+    else if(apt == "SOM")
+    {
+        return 5;
+    }
+    else if(apt == "WIL")
+    {
+        return 6;
+    }
+    else
+    {
+        return 7;
+    }
+}
+
+void Widget::removeAllRows()
+{
+    int rowCo = tempTable->rowCount();
+    for(int i = rowCo; i >= 0; i--)
+    {
+        tempTable->removeRow(i);
+    }
+}
+
+void Widget::on_moveRight_clicked()
+{
+    if(tempItem != 0)
+    {
+        ui->listEqImps->insertItem(0,ui->listImplant->takeItem(implantIndex));
+        ui->listImplant->sortItems(Qt::AscendingOrder);
+        ui->listEqImps->sortItems(Qt::AscendingOrder);
+    }
+}
+
+void Widget::on_moveLeft_clicked()
+{
+    if(tempItem != 0)
+    {
+        ui->listImplant->insertItem(0,ui->listEqImps->takeItem(implantIndex));
+        ui->listImplant->sortItems(Qt::AscendingOrder);
+        ui->listEqImps->sortItems(Qt::AscendingOrder);
+    }
+}
+
+void Widget::on_listImplant_itemClicked(QListWidgetItem *item)
+{
+    qint32 index = implantIndex;
+    qint32 offset = index + 1;
+    ui->textInfo->clear();
+
+    if(offset < desc.augments.size())
+    {
+        tempItem = item;
+        ui->textInfo->insertPlainText(desc.augments.at(offset));
+    }
+}
+
+void Widget::on_listEqImps_itemClicked(QListWidgetItem *item)
+{
+    qint32 index = implantIndex;
+    qint32 offset = index + 1;
+    ui->textInfo->clear();
+
+    if(offset < desc.augments.size())
+    {
+        tempItem = item;
+        ui->textInfo->insertPlainText(desc.augments.at(offset));
+    }
+}
+
+void Widget::on_listImplant_pressed(const QModelIndex &index)
+{
+    implantIndex = index.row();
+}
+
+void Widget::on_listEqImps_pressed(const QModelIndex &index)
+{
+    implantIndex = index.row();
+}
+
+qint32 Widget::speed()
+{
+    return storage.stats[3];
+}
+
+qreal Widget::durability()
+{
+    return storage.stats[2];
+}
+
+qreal Widget::woundThresh()
+{
+    return qCeil(durability() / 5);
+}
+
+qreal Widget::deathRating()
+{
+    if(morphIndex == 0)
+    {
+        return (durability() * 1.5);
+    }
+    else
+    {
+        return (durability() * 2);
+    }
+}
+
+qreal Widget::lucidity()
+{
+    qreal temp = egoTable->item(6,5)->text().toDouble();
+    return (temp * 2);
+}
+
+qreal Widget::traumaThresh()
+{
+    return qCeil(lucidity() / 5);
+}
+
+qreal Widget::insanityRating()
+{
+    return (lucidity() * 2);
+}
+
+qreal Widget::damageBonus()
+{
+    qreal temp = egoTable->item(5,5)->text().toDouble();
+    return qFloor(temp/10);
+}
+
+void Widget::stats()
+{
+    QString statsVar;
+    statsVar.append("Damage Bonus: \t\t" + toString(damageBonus()) +  "\t Death Rating: \t\t" + toString(deathRating()) +    "\t Durability: \t" + toString(durability()) + "\n" +
+                    "Initiative: \t\t" + initiative() +             "\t Insanity Rating: \t" + toString(insanityRating()) + "\t Lucidity: \t" + toString(lucidity()) + "\n" +
+                    "Moxie: \t\t" + toString(moxie()) +        "\t Current Moxie: \t\t" + toString(currentMoxie()) +   "\t Speed: \t" + toString(speed()) + "\n" +
+                    "Trauma Threshold: \t" + toString(traumaThresh()) + "\t Wound Threshold: \t" + toString(woundThresh()));
+    ui->textStats->setText(statsVar);
+}
+
+void Widget::on_morphSelect_activated(int index)
+{
+    morphIndex = index;
+    storage.stats[4] = morphIndex;
+}
+
+QString Widget::initiative()
+{
+    qreal tp1 = egoTable->item(2,5)->text().toDouble();
+    qreal tp2 = egoTable->item(3,5)->text().toDouble();
+    qreal tp3 = qFloor((tp1 + tp2)/5);
+    return toString(tp3);
+
+}
+qint32 Widget::moxie()
+{
+    return storage.stats[0];
+}
+qint32 Widget::currentMoxie()
+{
+    return storage.stats[1];
+}
+
+void Widget::on_comboBox_currentIndexChanged(int index)
+{
+    indexStatBox = index;
+}

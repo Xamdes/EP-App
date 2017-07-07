@@ -1,0 +1,4684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1112</width>
+    <height>555</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Eclipse Phase</string>
+  </property>
+  <widget class="QTabWidget" name="mainTab">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>9</y>
+     <width>821</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="Ego">
+    <attribute name="title">
+     <string>Ego</string>
+    </attribute>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QTabWidget" name="EgoTab">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab_aptitudes">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <attribute name="title">
+         <string>Aptitudes</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_11">
+         <item row="0" column="1">
+          <widget class="QTableWidget" name="Ego_Apt_Table">
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="inputMethodHints">
+            <set>Qt::ImhNone</set>
+           </property>
+           <property name="editTriggers">
+            <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed</set>
+           </property>
+           <property name="alternatingRowColors">
+            <bool>true</bool>
+           </property>
+           <property name="sortingEnabled">
+            <bool>false</bool>
+           </property>
+           <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+            <bool>false</bool>
+           </attribute>
+           <row>
+            <property name="text">
+             <string>Cognition</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Coordination</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Intuition</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Reflexes</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Savvy</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Somatics</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Willpower</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>Ego</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>LA Morph</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Other</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Temp</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Max</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Total</string>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="4">
+            <property name="text">
+             <string>30</string>
+            </property>
+           </item>
+           <item row="0" column="5">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="4">
+            <property name="text">
+             <string>30</string>
+            </property>
+           </item>
+           <item row="1" column="5">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="4">
+            <property name="text">
+             <string>30</string>
+            </property>
+           </item>
+           <item row="2" column="5">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="4">
+            <property name="text">
+             <string>30</string>
+            </property>
+           </item>
+           <item row="3" column="5">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="4">
+            <property name="text">
+             <string>30</string>
+            </property>
+           </item>
+           <item row="4" column="5">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="4">
+            <property name="text">
+             <string>30</string>
+            </property>
+           </item>
+           <item row="5" column="5">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="4">
+            <property name="text">
+             <string>30</string>
+            </property>
+           </item>
+           <item row="6" column="5">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_background">
+        <attribute name="title">
+         <string>Background</string>
+        </attribute>
+        <widget class="QTableWidget" name="backTable">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>170</y>
+           <width>681</width>
+           <height>192</height>
+          </rect>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="inputMethodHints">
+          <set>Qt::ImhNone</set>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="alternatingRowColors">
+          <bool>true</bool>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>250</number>
+         </attribute>
+         <attribute name="verticalHeaderDefaultSectionSize">
+          <number>50</number>
+         </attribute>
+         <row>
+          <property name="text">
+           <string>Advantages</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>Disadvantages</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>Common Morphs</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>Ape Uplift</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Bonobo Uplift</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Cetacean Uplift</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Corvid Uplift</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Drifter</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Emergent AGI Uplift</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Fall Evacuee</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Feral Uplift</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Humanities Infolife</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Hyperelite</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Indenture</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Infolife</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Isolate</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Lost</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Lunar Colonist</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Machine Infolife</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Maker Nomad</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Martian</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Neanderthal Uplift</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Octopus Uplift</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Original Space Colonist</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Parrot Uplift</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Pig Uplift</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Re-Instantiated</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Research Infolife</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Scumborn</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Sufi Nomad</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Titanian Hulder</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Uplift</string>
+          </property>
+         </column>
+         <item row="0" column="0">
+          <property name="text">
+           <string>+10 Fray skill, +20 Intimidation skill, +10 Unarmed Combat skill, Brave trait</string>
+          </property>
+         </item>
+         <item row="0" column="1">
+          <property name="text">
+           <string>+10 Freerunning skill, +10 Kinesics skill, +10 Persuasion skill, +10 to two Networking: [Field] skills of your choice, Social Animal trait</string>
+          </property>
+         </item>
+         <item row="0" column="2">
+          <property name="text">
+           <string>+20 Art: Singing skill, +10 Networking: [Field] skill of your choice, +20 Swimming skill, Social Animal trait</string>
+          </property>
+         </item>
+         <item row="0" column="3">
+          <property name="text">
+           <string>+10 Climbing skill, +10 Fray skill, +10 Freerunning skill, +10 Networking: Hypercorps skill, +10 to a skill of your choice</string>
+          </property>
+         </item>
+         <item row="0" column="4">
+          <property name="text">
+           <string>+20 Flight skill, +10 Navigation skill, +10 Perception skill, +20 Scrounging skill</string>
+          </property>
+         </item>
+         <item row="0" column="5">
+          <property name="text">
+           <string>+10 Navigation skill, +20 Pilot: Spacecraft skill, +10 Networking: [Field] skill of your choice</string>
+          </property>
+         </item>
+         <item row="0" column="6">
+          <property name="text">
+           <string>+10 Pilot: Groundcraft skill, +10 Networking: [Field] skill of your choice, +1 Moxie</string>
+          </property>
+         </item>
+         <item row="0" column="7">
+          <property name="text">
+           <string>+10 Fray skill, +20 Intimidation skill, +10 Perception skill, +20 Unarmed Combat skill, Heightened Instinct trait</string>
+          </property>
+         </item>
+         <item row="0" column="8">
+          <property name="text">
+           <string>+10 Academics: (Psychology or Sociology) skill, +20 Interfacing skill, +10 Kinesics skill, +10 to one Networking: [Field] skill of your choice, +10 Research skill</string>
+          </property>
+         </item>
+         <item row="0" column="9">
+          <property name="text">
+           <string>+10 Protocol skill, +10,000 Credit, +20 Networking: Hypercorps skill</string>
+          </property>
+         </item>
+         <item row="0" column="10">
+          <property name="text">
+           <string>+10 Networking: Hypercorp skill, +20 to one Profession: [Field] skill of your choice, +10 to one other skill of your choice</string>
+          </property>
+         </item>
+         <item row="0" column="11">
+          <property name="text">
+           <string>+30 Interfacing skill, Computer skills (Infosec, Interfacing, Programming, Research) bought with Customization Points are half price</string>
+          </property>
+         </item>
+         <item row="0" column="12">
+          <property name="text">
+           <string>+20 to two skills of your choice</string>
+          </property>
+         </item>
+         <item row="0" column="13">
+          <property name="text">
+           <string>+20 to two Knowledge skills of your choice, Psi trait (Level 1)</string>
+          </property>
+         </item>
+         <item row="0" column="14">
+          <property name="text">
+           <string>+10 Pilot: Groundcraft skill, +10 to one Technical, Academics: [Field], or Profession: [Field] skill of your choice, +20 Networking: Hypercorps skill</string>
+          </property>
+         </item>
+         <item row="0" column="15">
+          <property name="text">
+           <string>+10 Infosec skill, +30 Interfacing skill, +20 Programming skill, Machine Intuition trait</string>
+          </property>
+         </item>
+         <item row="0" column="16">
+          <property name="text">
+           <string>+10 to one Academics: [Field] skill of your choice, +10 to one Hardware: [Field] skill of your choice, +10 Profession: Terraforming skill, +10 Scrounging skill</string>
+          </property>
+         </item>
+         <item row="0" column="17">
+          <property name="text">
+           <string>+10 Pilot: Groundcraft skill, +10 to one Technical, Academic: [Field], or Profession: [Field] skill of your choice, +20 Networking: Hypercorps skill</string>
+          </property>
+         </item>
+         <item row="0" column="18">
+          <property name="text">
+           <string>+20 Art: Music skill, +10 to one Networking: [Field] skill of your choice, +10 Freerunning skill, +10 to one Profession: [Field] skill of your choice</string>
+          </property>
+         </item>
+         <item row="0" column="19">
+          <property name="text">
+           <string>+10 Deception skill, +10 Disguise skill, +10 Free Fall skill, +10 Infiltration skill, +10 Swimming skill, Hardening (Isolation) trait</string>
+          </property>
+         </item>
+         <item row="0" column="20">
+          <property name="text">
+           <string>+10 Pilot: Spacecraft or Free Fall skill, +10 to a Technical, Academic: [Field], or Profession: [Field] skill of your choice, +20 to a Networking: [Field] skill of your choice</string>
+          </property>
+         </item>
+         <item row="0" column="21">
+          <property name="text">
+           <string>+10 Flight skill, +20 Impersonation skill, +10 to a Networking: [Field] skill of your choice, First Impression trait</string>
+          </property>
+         </item>
+         <item row="0" column="22">
+          <property name="text">
+           <string>+10 Investigation skill, +10 Perception skill, +20 Scrounging, +10 Networking: Hypercorp skill, +10 to a Profession: [Field] skill of your choice</string>
+          </property>
+         </item>
+         <item row="0" column="23">
+          <property name="text">
+           <string>+10 Pilot: Groundcraft skill, +10 to a Networking: [Field] skill of your choice, +2 Moxie</string>
+          </property>
+         </item>
+         <item row="0" column="24">
+          <property name="text">
+           <string>+20 to one Academics: [Field] skill of your choice, +10 Interfacing skill, +30 Research skill</string>
+          </property>
+         </item>
+         <item row="0" column="25">
+          <property name="text">
+           <string>+10 Persuasion or Deception skill, +10 Scrounging skill, +20 Networking: Autonomists skill</string>
+          </property>
+         </item>
+         <item row="0" column="26">
+          <property name="text">
+           <string>+10 Art: [Field] skill of your choice, +10 Infiltration skill, +10 Navigation skill, +10 Scrounging skill</string>
+          </property>
+         </item>
+         <item row="0" column="27">
+          <property name="text">
+           <string>+10 Academics: [Field] skill of your choice, +10 Animal Handling skill, +10 Profession: Prospecting skill, +10 Scrounging skill</string>
+          </property>
+         </item>
+         <item row="0" column="28">
+          <property name="text">
+           <string> +10 Fray skill, +10 Perception skill, +20 to two Knowledge skills of your choice</string>
+          </property>
+         </item>
+         <item row="1" column="0">
+          <property name="text">
+           <string>Social Stigma (Uplift) trait</string>
+          </property>
+         </item>
+         <item row="1" column="1">
+          <property name="text">
+           <string>Addiction: Sex (Minor) trait, Social Stigma (Uplift) trait</string>
+          </property>
+         </item>
+         <item row="1" column="2">
+          <property name="text">
+           <string>Social Stigma (Uplift) trait</string>
+          </property>
+         </item>
+         <item row="1" column="3">
+          <property name="text">
+           <string>Social Stigma (Uplift) trait</string>
+          </property>
+         </item>
+         <item row="1" column="4">
+          <property name="text">
+           <string> Hoarder trait, Social Stigma (Uplift) trait</string>
+          </property>
+         </item>
+         <item row="1" column="5">
+          <property name="text">
+           <string>None</string>
+          </property>
+         </item>
+         <item row="1" column="6">
+          <property name="text">
+           <string>Only 2,500 Starting Credit (can still buy credit with CP)</string>
+          </property>
+         </item>
+         <item row="1" column="7">
+          <property name="text">
+           <string>Poorly Socialized trait, Real World Naiveté trait, Social Stigma (Uplift) trait, must start with an uplift biomorph</string>
+          </property>
+         </item>
+         <item row="1" column="8">
+          <property name="text">
+           <string> Real World Naiveté trait, Social Stigma (AGI) trait</string>
+          </property>
+         </item>
+         <item row="1" column="9">
+          <property name="text">
+           <string>May not start with flat, splicer, or any pod, uplift, or synthetic morphs</string>
+          </property>
+         </item>
+         <item row="1" column="10">
+          <property name="text">
+           <string>None</string>
+          </property>
+         </item>
+         <item row="1" column="11">
+          <property name="text">
+           <string>Real World Naiveté trait, Social Stigma (AGI) trait, Social skills bought with Customization Points are double price</string>
+          </property>
+         </item>
+         <item row="1" column="12">
+          <property name="text">
+           <string>–10 starting Rep</string>
+          </property>
+         </item>
+         <item row="1" column="13">
+          <property name="text">
+           <string>Mental Disorder (choose two - this includes the one from Psi (lvl 1) ) trait, Social Stigma (Lost) trait, must start with Futura morph</string>
+          </property>
+         </item>
+         <item row="1" column="14">
+          <property name="text">
+           <string>None</string>
+          </property>
+         </item>
+         <item row="1" column="15">
+          <property name="text">
+           <string>Poorly Socialized trait, Real World Naiveté trait, Social Stigma (AGI) trait</string>
+          </property>
+         </item>
+         <item row="1" column="16">
+          <property name="text">
+           <string>None</string>
+          </property>
+         </item>
+         <item row="1" column="17">
+          <property name="text">
+           <string>None</string>
+          </property>
+         </item>
+         <item row="1" column="18">
+          <property name="text">
+           <string>Social Stigma (Uplift) trait</string>
+          </property>
+         </item>
+         <item row="1" column="19">
+          <property name="text">
+           <string>Solitary trait, Social Stigma (Uplift) trait</string>
+          </property>
+         </item>
+         <item row="1" column="20">
+          <property name="text">
+           <string>None</string>
+          </property>
+         </item>
+         <item row="1" column="21">
+          <property name="text">
+           <string>Social Stigma (Uplift) trait</string>
+          </property>
+         </item>
+         <item row="1" column="22">
+          <property name="text">
+           <string>Impaired Balance (Level 1) trait, Oblivious trait, Social Stigma (Uplift) trait</string>
+          </property>
+         </item>
+         <item row="1" column="23">
+          <property name="text">
+           <string>Edited Memories trait, 0 Starting Credit (can still buy credit with CP)</string>
+          </property>
+         </item>
+         <item row="1" column="24">
+          <property name="text">
+           <string>Real World Naiveté trait, Social Stigma (AGI) trait</string>
+          </property>
+         </item>
+         <item row="1" column="25">
+          <property name="text">
+           <string>None</string>
+          </property>
+         </item>
+         <item row="1" column="26">
+          <property name="text">
+           <string>None</string>
+          </property>
+         </item>
+         <item row="1" column="27">
+          <property name="text">
+           <string>None</string>
+          </property>
+         </item>
+         <item row="1" column="28">
+          <property name="text">
+           <string>Must choose an uplift morph to start</string>
+          </property>
+         </item>
+         <item row="2" column="0">
+          <property name="text">
+           <string> Neo-Hominid, Neo-Hominid (Gorillas)</string>
+          </property>
+         </item>
+         <item row="2" column="1">
+          <property name="text">
+           <string>Neo-Hominid, Pleasure Pod, Sylph</string>
+          </property>
+         </item>
+         <item row="2" column="2">
+          <property name="text">
+           <string>Neo-Beluga, Neo-Dolphin, Neo-Orca, Neo-Porpoise, Neo-Whale</string>
+          </property>
+         </item>
+         <item row="2" column="3">
+          <property name="text">
+           <string>Neo-Hominid</string>
+          </property>
+         </item>
+         <item row="2" column="4">
+          <property name="text">
+           <string>Chickcharnie, Neo-Avian, Ripwing</string>
+          </property>
+         </item>
+         <item row="2" column="5">
+          <property name="text">
+           <string>All, especially Bouncers and Hibernoids</string>
+          </property>
+         </item>
+         <item row="2" column="6">
+          <property name="text">
+           <string>Flats, Splicers</string>
+          </property>
+         </item>
+         <item row="2" column="7">
+          <property name="text">
+           <string> Any uplift biomorph</string>
+          </property>
+         </item>
+         <item row="2" column="8">
+          <property name="text">
+           <string>Infomorph/Eidolon, Basic Pod, Pleasure Pod, Specialist Pod</string>
+          </property>
+         </item>
+         <item row="2" column="9">
+          <property name="text">
+           <string> Exalts, Sylphs</string>
+          </property>
+         </item>
+         <item row="2" column="10">
+          <property name="text">
+           <string>Cases, Splicers, Rusters</string>
+          </property>
+         </item>
+         <item row="2" column="11">
+          <property name="text">
+           <string>Infomorphs, synthetic morphs</string>
+          </property>
+         </item>
+         <item row="2" column="12">
+          <property name="text">
+           <string>All</string>
+          </property>
+         </item>
+         <item row="2" column="13">
+          <property name="text">
+           <string>Futuras</string>
+          </property>
+         </item>
+         <item row="2" column="14">
+          <property name="text">
+           <string>Flats, Splicers</string>
+          </property>
+         </item>
+         <item row="2" column="15">
+          <property name="text">
+           <string> Infomorph/Eidolon, Specialist Pod, Synth, Worker Pod</string>
+          </property>
+         </item>
+         <item row="2" column="16">
+          <property name="text">
+           <string> Dragonﬂy, Martian Alpiner, Ruster</string>
+          </property>
+         </item>
+         <item row="2" column="17">
+          <property name="text">
+           <string>Flats, Splicers, and Rusters</string>
+          </property>
+         </item>
+         <item row="2" column="18">
+          <property name="text">
+           <string>Neanderthal, Splicer</string>
+          </property>
+         </item>
+         <item row="2" column="19">
+          <property name="text">
+           <string>Flying Squid, Octomorph, Takko</string>
+          </property>
+         </item>
+         <item row="2" column="20">
+          <property name="text">
+           <string> All. Use of exotic morphs is common.</string>
+          </property>
+         </item>
+         <item row="2" column="21">
+          <property name="text">
+           <string>Neo-Avian</string>
+          </property>
+         </item>
+         <item row="2" column="22">
+          <property name="text">
+           <string>Neo-Pig</string>
+          </property>
+         </item>
+         <item row="2" column="23">
+          <property name="text">
+           <string>Cases, Infomorphs, Synths</string>
+          </property>
+         </item>
+         <item row="2" column="24">
+          <property name="text">
+           <string>nfomorph/Eidolon, Specialist Pod, Synth</string>
+          </property>
+         </item>
+         <item row="2" column="25">
+          <property name="text">
+           <string>All, especially Bouncers</string>
+          </property>
+         </item>
+         <item row="2" column="26">
+          <property name="text">
+           <string>Martian Alpiner, Olympian, Ruster</string>
+          </property>
+         </item>
+         <item row="2" column="27">
+          <property name="text">
+           <string>Hulder</string>
+          </property>
+         </item>
+         <item row="2" column="28">
+          <property name="text">
+           <string>Neo-Avian, Neo-Hominid, Octomorph</string>
+          </property>
+         </item>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_faction">
+        <attribute name="title">
+         <string>Faction</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_17"/>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="Morph">
+    <attribute name="title">
+     <string>Morph</string>
+    </attribute>
+    <layout class="QGridLayout" name="gridLayout_13">
+     <item row="0" column="0">
+      <widget class="QTabWidget" name="morphApt">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="widget">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <attribute name="title">
+         <string>Aptitudes</string>
+        </attribute>
+        <widget class="QTableWidget" name="morphTable">
+         <property name="geometry">
+          <rect>
+           <x>9</x>
+           <y>9</y>
+           <width>491</width>
+           <height>241</height>
+          </rect>
+         </property>
+         <row>
+          <property name="text">
+           <string>Cognition</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>Coordination</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>Intuition</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>Reflexes</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>Savvy</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>Somatics</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>Willpower</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>Morph</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Implants</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Other</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Total</string>
+          </property>
+         </column>
+         <item row="0" column="0">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="0" column="1">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="0" column="2">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="0" column="3">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="1" column="0">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="1" column="1">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="1" column="2">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="1" column="3">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="2" column="0">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="2" column="1">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="2" column="2">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="2" column="3">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="3" column="0">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="3" column="1">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="3" column="2">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="3" column="3">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="4" column="0">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="4" column="1">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="4" column="2">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="4" column="3">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="5" column="0">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="5" column="1">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="5" column="2">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="5" column="3">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="6" column="0">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="6" column="1">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="6" column="2">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item row="6" column="3">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="morphNameLabel">
+         <property name="geometry">
+          <rect>
+           <x>520</x>
+           <y>10</y>
+           <width>71</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Morph Name: </string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="morphName">
+         <property name="geometry">
+          <rect>
+           <x>590</x>
+           <y>10</y>
+           <width>191</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="addMorph">
+         <property name="geometry">
+          <rect>
+           <x>510</x>
+           <y>40</y>
+           <width>75</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Add</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="delMorph">
+         <property name="geometry">
+          <rect>
+           <x>590</x>
+           <y>40</y>
+           <width>75</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Delete</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="morphTypeSelect">
+         <property name="geometry">
+          <rect>
+           <x>670</x>
+           <y>40</y>
+           <width>111</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>Biomorph</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Synthmorph</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="premadeMorphs">
+         <property name="geometry">
+          <rect>
+           <x>610</x>
+           <y>70</y>
+           <width>171</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="stanMorphs">
+         <property name="geometry">
+          <rect>
+           <x>520</x>
+           <y>70</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Premade Morphs: </string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Equipment</string>
+    </attribute>
+    <layout class="QGridLayout" name="gridLayout_15">
+     <item row="0" column="0">
+      <widget class="QTabWidget" name="tabEquipment">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tabImplants">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <attribute name="title">
+         <string>Implants</string>
+        </attribute>
+        <widget class="QListWidget" name="listImplant">
+         <property name="geometry">
+          <rect>
+           <x>9</x>
+           <y>9</y>
+           <width>181</width>
+           <height>351</height>
+          </rect>
+         </property>
+         <property name="sortingEnabled">
+          <bool>false</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>Basic Biomods</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Basic Mesh Inserts</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Empty</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QListWidget" name="listEqImps">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>10</y>
+           <width>181</width>
+           <height>351</height>
+          </rect>
+         </property>
+         <property name="sortingEnabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="moveRight">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>90</y>
+           <width>31</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>--&gt;</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="moveLeft">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>120</y>
+           <width>31</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>&lt;--</string>
+         </property>
+        </widget>
+        <widget class="QTextBrowser" name="textInfo">
+         <property name="geometry">
+          <rect>
+           <x>440</x>
+           <y>11</y>
+           <width>221</width>
+           <height>211</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tabEquip">
+        <attribute name="title">
+         <string>Equipment</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="tabSoft">
+        <attribute name="title">
+         <string>Software</string>
+        </attribute>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="Skills">
+    <attribute name="title">
+     <string>Skills</string>
+    </attribute>
+    <layout class="QGridLayout" name="gridLayout_18">
+     <item row="0" column="0">
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab_Combat">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <attribute name="title">
+         <string>Combat</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="QTableWidget" name="tableCombat">
+           <property name="inputMethodHints">
+            <set>Qt::ImhNone</set>
+           </property>
+           <property name="sortingEnabled">
+            <bool>true</bool>
+           </property>
+           <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+            <bool>true</bool>
+           </attribute>
+           <row>
+            <property name="text">
+             <string>Beam Weapons</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Blades</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Clubs</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Fray</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Gunnery</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Kinetic Weapons</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Seeker Weapons</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Spray Weapons</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Throwing Weapons</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Unarmed Combat</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>Skill Points</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>LA Bonus</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Other</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Total</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>SPE</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Linked Aptitude</string>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="0" column="5">
+            <property name="text">
+             <string>COO</string>
+            </property>
+           </item>
+           <item row="1" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="1" column="5">
+            <property name="text">
+             <string>SOM</string>
+            </property>
+           </item>
+           <item row="2" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="2" column="5">
+            <property name="text">
+             <string>SOM</string>
+            </property>
+           </item>
+           <item row="3" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="3" column="5">
+            <property name="text">
+             <string>REF</string>
+            </property>
+           </item>
+           <item row="4" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="4" column="5">
+            <property name="text">
+             <string>INT</string>
+            </property>
+           </item>
+           <item row="5" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="5" column="5">
+            <property name="text">
+             <string>COO</string>
+            </property>
+           </item>
+           <item row="6" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="6" column="5">
+            <property name="text">
+             <string>COO</string>
+            </property>
+           </item>
+           <item row="7" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="7" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="7" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="7" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="7" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="7" column="5">
+            <property name="text">
+             <string>COO</string>
+            </property>
+           </item>
+           <item row="8" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="8" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="8" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="8" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="8" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="8" column="5">
+            <property name="text">
+             <string>COO</string>
+            </property>
+           </item>
+           <item row="9" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="9" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="9" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="9" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="9" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="9" column="5">
+            <property name="text">
+             <string>SOM</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_ExWp">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <attribute name="title">
+         <string>Exotic Weapons</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="0">
+          <widget class="QTableWidget" name="tableExWp">
+           <property name="sortingEnabled">
+            <bool>true</bool>
+           </property>
+           <row>
+            <property name="text">
+             <string>Blowgun</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Crossbow</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Flamethrower</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Morning Star</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Slingshot</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Spear</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Whip</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>Skill Points</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>LA Bonus</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Other</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Total</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>SPE</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Linked Aptitude</string>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="0" column="5">
+            <property name="text">
+             <string>COO</string>
+            </property>
+           </item>
+           <item row="1" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="1" column="5">
+            <property name="text">
+             <string>COO</string>
+            </property>
+           </item>
+           <item row="2" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="2" column="5">
+            <property name="text">
+             <string>COO</string>
+            </property>
+           </item>
+           <item row="3" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="3" column="5">
+            <property name="text">
+             <string>SOM</string>
+            </property>
+           </item>
+           <item row="4" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="4" column="5">
+            <property name="text">
+             <string>COO</string>
+            </property>
+           </item>
+           <item row="5" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="5" column="5">
+            <property name="text">
+             <string>SOM</string>
+            </property>
+           </item>
+           <item row="6" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="6" column="5">
+            <property name="text">
+             <string>SOM</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_Hardware">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <attribute name="title">
+         <string>Hardware</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <widget class="QTableWidget" name="tableHardware">
+           <property name="sortingEnabled">
+            <bool>true</bool>
+           </property>
+           <row>
+            <property name="text">
+             <string>Aerospace</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Armorer</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Electronics</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Groundcraft</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Implants</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Industrial</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Nautical</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Robotics</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>Skill Points</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>LA Bonus</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Other</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Total</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>SPE</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Linked Aptitude</string>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="0" column="5">
+            <property name="text">
+             <string>COG</string>
+            </property>
+           </item>
+           <item row="1" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="1" column="5">
+            <property name="text">
+             <string>COG</string>
+            </property>
+           </item>
+           <item row="2" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="2" column="5">
+            <property name="text">
+             <string>COG</string>
+            </property>
+           </item>
+           <item row="3" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="3" column="5">
+            <property name="text">
+             <string>COG</string>
+            </property>
+           </item>
+           <item row="4" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="4" column="5">
+            <property name="text">
+             <string>COG</string>
+            </property>
+           </item>
+           <item row="5" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="5" column="5">
+            <property name="text">
+             <string>COG</string>
+            </property>
+           </item>
+           <item row="6" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="6" column="5">
+            <property name="text">
+             <string>COG</string>
+            </property>
+           </item>
+           <item row="7" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="7" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="7" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="7" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="7" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="7" column="5">
+            <property name="text">
+             <string>COG</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_Knowledge">
+        <attribute name="title">
+         <string>Knowledge</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="0" column="0">
+          <widget class="QTableWidget" name="tableKnow">
+           <property name="sortingEnabled">
+            <bool>true</bool>
+           </property>
+           <row>
+            <property name="text">
+             <string>Academics: Psychology</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Art: Writing</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Interest: Science Fiction</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Language: English</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Profession: Psychotherapy</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>Skill Points</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>LA Bonus</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Other</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Total</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>SPE</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Linked Aptitude</string>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="0" column="5">
+            <property name="text">
+             <string>COG</string>
+            </property>
+           </item>
+           <item row="1" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="1" column="5">
+            <property name="text">
+             <string>INT</string>
+            </property>
+           </item>
+           <item row="2" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="2" column="5">
+            <property name="text">
+             <string>COG</string>
+            </property>
+           </item>
+           <item row="3" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="3" column="5">
+            <property name="text">
+             <string>INT</string>
+            </property>
+           </item>
+           <item row="4" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="4" column="5">
+            <property name="text">
+             <string>COG</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_Mental">
+        <attribute name="title">
+         <string>Mental</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="0" column="0">
+          <widget class="QTableWidget" name="tableMental">
+           <property name="sortingEnabled">
+            <bool>true</bool>
+           </property>
+           <row>
+            <property name="text">
+             <string>Investigation</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Navigation</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Perception</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Scrounging</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>Skill Points</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>LA Bonus</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Other</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Total</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>SPE</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Linked Aptitude</string>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="0" column="5">
+            <property name="text">
+             <string>INT</string>
+            </property>
+           </item>
+           <item row="1" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="1" column="5">
+            <property name="text">
+             <string>INT</string>
+            </property>
+           </item>
+           <item row="2" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="2" column="5">
+            <property name="text">
+             <string>INT</string>
+            </property>
+           </item>
+           <item row="3" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="3" column="5">
+            <property name="text">
+             <string>INT</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_Physical">
+        <attribute name="title">
+         <string>Physical</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_7">
+         <item row="0" column="0">
+          <widget class="QTableWidget" name="tablePhysical">
+           <property name="sortingEnabled">
+            <bool>true</bool>
+           </property>
+           <row>
+            <property name="text">
+             <string>Climbing</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Disguise</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Flight</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Free Fall</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Freerunning</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Infiltration</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Palming</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Swimming</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>Skill Points</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>LA Bonus</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Other</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Total</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>SPE</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Linked Aptitude</string>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="0" column="5">
+            <property name="text">
+             <string>SOM</string>
+            </property>
+           </item>
+           <item row="1" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="1" column="5">
+            <property name="text">
+             <string>INT</string>
+            </property>
+           </item>
+           <item row="2" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="2" column="5">
+            <property name="text">
+             <string>SOM</string>
+            </property>
+           </item>
+           <item row="3" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="3" column="5">
+            <property name="text">
+             <string>REF</string>
+            </property>
+           </item>
+           <item row="4" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="4" column="5">
+            <property name="text">
+             <string>SOM</string>
+            </property>
+           </item>
+           <item row="5" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="5" column="5">
+            <property name="text">
+             <string>COO</string>
+            </property>
+           </item>
+           <item row="6" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="6" column="5">
+            <property name="text">
+             <string>COO</string>
+            </property>
+           </item>
+           <item row="7" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="7" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="7" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="7" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="7" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="7" column="5">
+            <property name="text">
+             <string>SOM</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_Psi">
+        <attribute name="title">
+         <string>Psi</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_8">
+         <item row="0" column="0">
+          <widget class="QTableWidget" name="tablePsi">
+           <property name="sortingEnabled">
+            <bool>true</bool>
+           </property>
+           <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+            <bool>true</bool>
+           </attribute>
+           <row>
+            <property name="text">
+             <string>Control*</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Psi Assult*</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Sense*</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>Skill Points</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>LA Bonus</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Other</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Total</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>SPE</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Linked Aptitude</string>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="0" column="5">
+            <property name="text">
+             <string>WIL</string>
+            </property>
+           </item>
+           <item row="1" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="1" column="5">
+            <property name="text">
+             <string>WIL</string>
+            </property>
+           </item>
+           <item row="2" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="2" column="5">
+            <property name="text">
+             <string>INT</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_Social">
+        <attribute name="title">
+         <string>Social</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_9">
+         <item row="0" column="0">
+          <widget class="QTableWidget" name="tableSocial">
+           <property name="dragEnabled">
+            <bool>false</bool>
+           </property>
+           <property name="sortingEnabled">
+            <bool>true</bool>
+           </property>
+           <row>
+            <property name="text">
+             <string>Animal Handling</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Deception</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Impersonation</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Intimidation</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Kinesics</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Net: Autonomists (@-rep)</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Net: Criminals (g-rep)</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Net: Ecologists (e-rep)</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Net: Firewall (i-rep)</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Net: Hypercorps (c-rep)</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Net: Media (f-rep)</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Net: Scientists (r-rep)</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Net: Gatecrashers (x-rep)</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Persuasion</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Protocol</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>Skill Points</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>LA Bonus</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Other</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Total</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>SPE</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Linked Aptitude</string>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="0" column="5">
+            <property name="text">
+             <string>SAV</string>
+            </property>
+           </item>
+           <item row="1" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="1" column="5">
+            <property name="text">
+             <string>SAV</string>
+            </property>
+           </item>
+           <item row="2" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="2" column="5">
+            <property name="text">
+             <string>SAV</string>
+            </property>
+           </item>
+           <item row="3" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="3" column="5">
+            <property name="text">
+             <string>SAV</string>
+            </property>
+           </item>
+           <item row="4" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="4" column="5">
+            <property name="text">
+             <string>SAV</string>
+            </property>
+           </item>
+           <item row="5" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="5" column="5">
+            <property name="text">
+             <string>SAV</string>
+            </property>
+           </item>
+           <item row="6" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="6" column="5">
+            <property name="text">
+             <string>SAV</string>
+            </property>
+           </item>
+           <item row="7" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="7" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="7" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="7" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="7" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="7" column="5">
+            <property name="text">
+             <string>SAV</string>
+            </property>
+           </item>
+           <item row="8" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="8" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="8" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="8" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="8" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="8" column="5">
+            <property name="text">
+             <string>SAV</string>
+            </property>
+           </item>
+           <item row="9" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="9" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="9" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="9" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="9" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="9" column="5">
+            <property name="text">
+             <string>SAV</string>
+            </property>
+           </item>
+           <item row="10" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="10" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="10" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="10" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="10" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="10" column="5">
+            <property name="text">
+             <string>SAV</string>
+            </property>
+           </item>
+           <item row="11" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="11" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="11" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="11" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="11" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="11" column="5">
+            <property name="text">
+             <string>SAV</string>
+            </property>
+           </item>
+           <item row="12" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="12" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="12" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="12" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="12" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="12" column="5">
+            <property name="text">
+             <string>SAV</string>
+            </property>
+           </item>
+           <item row="13" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="13" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="13" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="13" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="13" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="13" column="5">
+            <property name="text">
+             <string>SAV</string>
+            </property>
+           </item>
+           <item row="14" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="14" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="14" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="14" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="14" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="14" column="5">
+            <property name="text">
+             <string>SAV</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_Technical">
+        <attribute name="title">
+         <string>Technical</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_19">
+         <item row="0" column="0">
+          <widget class="QTableWidget" name="tableTechnical">
+           <property name="sortingEnabled">
+            <bool>true</bool>
+           </property>
+           <row>
+            <property name="text">
+             <string>Demolitions*</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Infosec*</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Interfacing</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Medicine</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Programming*</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Psychosurgery</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Research</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>Skill Points</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>LA Bonus</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Other</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Total</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>SPE</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Linked Aptitude</string>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="0" column="5">
+            <property name="text">
+             <string>COG</string>
+            </property>
+           </item>
+           <item row="1" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="1" column="5">
+            <property name="text">
+             <string>COG</string>
+            </property>
+           </item>
+           <item row="2" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="2" column="5">
+            <property name="text">
+             <string>COG</string>
+            </property>
+           </item>
+           <item row="3" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="3" column="5">
+            <property name="text">
+             <string>COG</string>
+            </property>
+           </item>
+           <item row="4" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="4" column="5">
+            <property name="text">
+             <string>COG</string>
+            </property>
+           </item>
+           <item row="5" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="5" column="5">
+            <property name="text">
+             <string>INT</string>
+            </property>
+           </item>
+           <item row="6" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="6" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="6" column="5">
+            <property name="text">
+             <string>COG</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_Vehicle">
+        <attribute name="title">
+         <string>Vehicle</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_10">
+         <item row="0" column="0">
+          <widget class="QTableWidget" name="tableVehicle">
+           <property name="sortingEnabled">
+            <bool>true</bool>
+           </property>
+           <row>
+            <property name="text">
+             <string>Pilot: Aircraft</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Pilot: Anthroform</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Pilot: Exotic Vehicles</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Pilot: Groundcraft</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Pilot: Spacecraft</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Pilot: Watercraft</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>Skill Points</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>LA Bonus</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Other</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Total</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>SPE</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Linked Aptitude</string>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="0" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="0" column="5">
+            <property name="text">
+             <string>REF</string>
+            </property>
+           </item>
+           <item row="1" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="1" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="1" column="5">
+            <property name="text">
+             <string>REF</string>
+            </property>
+           </item>
+           <item row="2" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="2" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="2" column="5">
+            <property name="text">
+             <string>REF</string>
+            </property>
+           </item>
+           <item row="3" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="3" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="3" column="5">
+            <property name="text">
+             <string>REF</string>
+            </property>
+           </item>
+           <item row="4" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="4" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="4" column="5">
+            <property name="text">
+             <string>REF</string>
+            </property>
+           </item>
+           <item row="5" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </item>
+           <item row="5" column="4">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </item>
+           <item row="5" column="5">
+            <property name="text">
+             <string>REF</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="Settings">
+    <attribute name="title">
+     <string>Settings</string>
+    </attribute>
+   </widget>
+  </widget>
+  <widget class="QLineEdit" name="valueSelect">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>520</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="EA_Add">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>490</y>
+     <width>51</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+   <property name="default">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="EA_Sub">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>490</y>
+     <width>51</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Subtract</string>
+   </property>
+   <property name="default">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="save">
+   <property name="geometry">
+    <rect>
+     <x>1000</x>
+     <y>10</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="load">
+   <property name="geometry">
+    <rect>
+     <x>1000</x>
+     <y>40</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Load</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addRow">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>430</y>
+     <width>61</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add Row</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="addText">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>400</y>
+     <width>231</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="delRow">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>430</y>
+     <width>61</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Del Row</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>460</y>
+     <width>111</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Moxie</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Current Moxie</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Durability</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Speed</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QTextBrowser" name="textStats">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>460</y>
+     <width>701</width>
+     <height>71</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="charName">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>30</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="charNameLabel">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>10</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Character Name</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="pointsText">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>120</y>
+     <width>231</width>
+     <height>271</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>60</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Current Morph</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="morphSelect">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>80</y>
+     <width>141</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
